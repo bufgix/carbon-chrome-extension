@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Carbon Highlighter",
+    "description": "BBCode Syntax Highlighter by Bufgix(Easyly)",
+    "icons": {
+        "16": "images/term.png",
+        "32": "images/term.png",
+        "48": "images/term.png",
+        "128": "images/term.png"
+      },
+      "browser_action":{
+        "default_icon": "images/term.png",
+        "default_popup": "index.html"
+      },
+      "permissions": ["storage", "<all_urls>"]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <style>
+        * {
+            color: white;
+        }
+        body {
+            font: 14px/1 'Roboto', sans-serif;
+            color: #fff;
+            background: url('https://codepen.io/images/classy_fabric.png') #333;
+            -webkit-font-smoothing: antialiased;
+        }
+        input,
+        textarea#data,
+        textarea#result {
+            color: white;
+            display: block;
+            padding: 8px 12px 10px 12px;
+            border: 1px solid rgba(0, 0, 0, .5);
+            background: rgba(0, 0, 0, .25);
+        }
+        button {
+            margin-top: 10px;
+            margin-bottom: 3px;
+            display: block;
+            width: 150px;
+            margin-right: 10px;
+            padding: 8px 0 10px 0;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, .5);
+            background: rgba(0, 0, 0, .25);
+            transition: 0.4s;
+        }
+        button:hover {
+            border: 1px solid rgb(65,167,225);
+        }
+        select {
+            float: left;
+            color: white;
+            background-color: rgba(0, 0, 0, .25);
+            border: 1px solid rgb(65,167,225);
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 5px;">
+        <div class="row d-flex justify-content-center" >
+            <img class="rounded d-block text-center " height="60" width="60" src="/images/term.png">
+            <h3 calss="border-botton mb-4  vertical-center" style="margin-top: 10px;">Carbon Code Highlighter</h3>
+        </div>
+        
+        <textarea id="data" rows="10" cols="80" spellcheck="false" placeholder="Kodunuzu buraya yazın"></textarea>
+        <button id="send">Renklendir</button>
+        <div class="form-group">
+            <input type="text" id="lang" aria-describedby="langHelp" placeholder="Varsayılan: Python">
+            <small id="langHelp" class="form-text text-muted">Dilin kısaltmasını yazabilirsiniz(Örn: py, js)</small>
+          </div>
+        <textarea readonly name="result" rows="10" cols="80" type="text" id="result" spellcheck="false"></textarea>
+        <button id="copy" onclick="copyText()">Kopyala</button>
+    </div>
+
+
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
