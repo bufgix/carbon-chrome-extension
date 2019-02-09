@@ -1,4 +1,4 @@
-# BBcode Sytax Highlighter for Chrome
+# BBcode Sytax Highlighter Extension
 
 ![img1](/screenshots/s1.PNG)
 ![img2](/screenshots/s2.PNG)
