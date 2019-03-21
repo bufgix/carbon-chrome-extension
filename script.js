@@ -7,7 +7,7 @@ $("#send").click(() => {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://carboncode.herokuapp.com/api",
+        "url": "http://155.138.236.165/api",
         "method": "POST",
         "headers": {
           "Content-Type": "application/x-www-form-urlencoded",
